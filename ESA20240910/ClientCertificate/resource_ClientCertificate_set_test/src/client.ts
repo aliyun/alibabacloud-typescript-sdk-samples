@@ -201,9 +201,7 @@ export default class Client {
     // Init client
     let esa20240910Client = Client.createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_ClientCertificate_set_test
     let ratePlanInstCltCertRespBody = await Client.ratePlanInstCltCert(esa20240910Client);
-    //resource_Site_ClientCerticificate_set_test
     let siteCltCertRespBody = await Client.siteCltCert(ratePlanInstCltCertRespBody, esa20240910Client);
     let cltCertRespBody = await Client.cltCert(siteCltCertRespBody, esa20240910Client);
     // update resource

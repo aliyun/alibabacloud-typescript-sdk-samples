@@ -185,9 +185,7 @@ export default class Client {
     // Init client
     let esa20240910Client = Client.createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_set_test
     let ratePlanInstRespBody = await Client.ratePlanInst(esa20240910Client);
-    //resource_HttpBasicConfiguration_set_test
     let siteRespBody = await Client.site(ratePlanInstRespBody, esa20240910Client);
     let httpsCfgRespBody = await Client.httpsCfg(siteRespBody, esa20240910Client);
     // update resource

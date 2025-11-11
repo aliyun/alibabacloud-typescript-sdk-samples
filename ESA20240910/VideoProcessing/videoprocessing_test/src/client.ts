@@ -198,9 +198,7 @@ export default class Client {
     // Init client
     let esa20240910Client = Client.createESA20240910Client();
     // Init resource
-    //resource_VideoProcessing_test
     let ratePlanInstRespBody = await Client.ratePlanInst(esa20240910Client);
-    //resource_Site_VideoProcessing_test
     let siteRespBody = await Client.site(ratePlanInstRespBody, esa20240910Client);
     let videoProcRespBody = await Client.videoProc(siteRespBody, esa20240910Client);
     // update resource

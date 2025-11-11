@@ -168,9 +168,7 @@ export default class Client {
     // Init client
     let esa20240910Client = Client.createESA20240910Client();
     // Init resource
-    //resource_RatePlanInstance_ScheduledPreloadJob_test_2
     let ratePlanInstRespBody = await Client.ratePlanInst(esa20240910Client);
-    //resource_Site_ScheduledPreloadJob_test_2
     let siteRespBody = await Client.site(ratePlanInstRespBody, esa20240910Client);
     let schedPreloadJobRespBody = await Client.schedPreloadJob(siteRespBody, esa20240910Client);
     // destroy resource

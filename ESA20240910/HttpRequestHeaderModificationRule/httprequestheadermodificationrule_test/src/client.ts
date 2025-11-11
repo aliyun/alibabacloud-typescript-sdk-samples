@@ -216,9 +216,7 @@ export default class Client {
     // Init client
     let esa20240910Client = Client.createESA20240910Client();
     // Init resource
-    //resource_HttpRequestHeaderModificationRule_test
     let ratePlanInstRespBody = await Client.ratePlanInst(esa20240910Client);
-    //resource_Site_HttpRequestHeaderModificationRule_test
     let siteRespBody = await Client.site(ratePlanInstRespBody, esa20240910Client);
     let reqHdrModRuleRespBody = await Client.reqHdrModRule(siteRespBody, esa20240910Client);
     // update resource
